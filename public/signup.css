@@ -1,0 +1,17 @@
+
+#success_message{ display: none;}
+
+body{
+}
+
+.c1{
+	padding-top: 50px;
+	opacity: 0.6;
+}
+.r1{
+	height: 130px;
+	background-color: white ;
+	font-size: 20px;
+	font-family: garmond;
+	opacity: 0.4;
+}

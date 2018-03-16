@@ -1,0 +1,79 @@
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+
+<link rel="stylesheet" type="text/css" href="signup.css">
+<body background="https://www.pixelstalk.net/wp-content/uploads/2016/08/Book-Lies-Sofa-Library-Background.jpg">
+<form method="get" action="/studentloginaftersingup">
+
+<div class='row r1' align="center">
+   <h1 font=" garmond">LIBRARY MANAGEMENT</h1>
+   <label>sign up</label>
+   <div class='row r2'>
+   </div>
+</div>
+
+<div class="row r3">
+<div class="col-md-5">
+</div> 
+
+<div class="col-md-2"> 
+<div class="form-group">
+        <label style="color:white" > Username</label>
+        <input type="text" class="form-control" id="studentusername" placeholder="student Username" name="studentusername" pattern="^sd[0-9].{7,20}" title="The Username should be minimum length of 6 and start with sd">
+      </div>
+
+</div>
+</div>
+
+
+
+<div class="row r3">
+  <div class="col-md-5"></div>
+  <div class="col-md-2">
+    <div class="form-group">
+        <label style="color: white" >Password</label>
+        <input type="password" class="form-control" id="studentpassword" placeholder="Student Password" name="studentpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+      </div>
+  </div>
+  </div>
+</div>,,
+
+<div class="row r3">
+  <div class="col-md-5"></div>
+  <div class="col-md-2">
+    <div class="form-group">
+        <label style="color: white"> Confirm Password</label>
+        <input type="password" name="studentcnfpassword" class="form-control" placeholder="confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+      </div>
+  </div>
+  </div>
+</div>
+
+<div class="row r3">
+  <div class="col-md-5"></div>
+  <div class="col-md-2">
+    <div class="form-group">
+        <label style="color: white" >Email</label>
+        <input type="Email" class="form-control" id="studentemail" placeholder="Student Email" name="studentemail">
+      </div>
+  </div>
+  </div>
+</div>
+  
+  <div class="row r7" align="center" >
+    <div class="col-md-5"></div>
+    <div class="col-md-2">
+
+        <input type="submit" class="btn btn-success" value="Sign up"></input>
+    </div>
+  </div>
+
+</div>
+    </div>
+
+  <!-- /.container -->
+
+</form>
+</body>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="js/bootstrap.min.js">      </script>
