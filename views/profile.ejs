@@ -49,7 +49,7 @@
 			
 			<div class="row">
 				<div class="col-sm-4 col-xs-12">
-					<div id="gtco-logo"><a href="/library/<%= username %>">Library Management<em>.</em></a></div>
+					<div id="gtco-logo"><a href="/profile2/<%= username %>">Library Management<em>.</em></a></div>
 				</div>
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
@@ -57,12 +57,17 @@
 							<a >Manage</a>
 							<ul class="dropdown">
 								<li><a href="/profilemanagement/<%= username %>">Profile Management</a></li>
-								<li><a href="#">Wallet Management</a></li>
-								<li><a href="#">Bookings</a></li>
+								<li><a href="/wallet/<%= username %>">Wallet Management</a></li>
+								<li><a href="/switching/<%= username %>">Money Transfer</a></li>
+								<li><a href="/bookings/<%= username %>">Bookings</a></li>
 							</ul>
 						</li>
+												<li class="btn-cta"><a href="/profile2/<%= username %>"><span>Book</span></a></li>
+
 						
 						<li> Hello <%= username %></li>
+						<a href="/home"><button type="button" class="btn btn-light">Logout</button></a>
+
 					</ul>	
 				</div>
 			</div>
@@ -70,7 +75,7 @@
 		</div>
 	</nav>
 	
-	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(images/book.jpg)" data-stellar-background-ratio="0.5">
+	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(images/books1.jpg)" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="gtco-container">
 			<div class="row">
@@ -88,15 +93,15 @@
 									<div class="tab-content">
 										<div class="tab-content-inner active" data-content="signup">
 											<h3 class="cursive-font">Look For Your BOOK Here!</h3>
-											<form method = "get" action="/bookings">
+											<form method = "get" action="/bookdetails/<%= username %>">
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="activities">Search by</label>
-														<select name="#" id="activities" class="form-control">
+														<select name="category" id="category" class="form-control" value="categeory Search" >
 															<option value="">Category</option>
 															<option value="author">Author</option>
-															<option value="genere">Genere</option>
-															<option value="dateavail">Date Available</option>
+															<option value="genre">genre</option>
+															<option value="book">bookname</option>
 														</select>
 													</div>
 												</div>
@@ -104,13 +109,13 @@
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="date-start">Date of Booking</label>
-														<input type="text" id="date" class="form-control">
+														<input type="text" name="date" id="date" class="form-control">
 													</div>
 												</div>
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="cat-search">Category Search</label>
-														<input type="text" id="date" class="form-control">
+														<input type="text" name="search" id="search" class="form-control">
 													</div>
 												</div>
 												
@@ -172,4 +177,3 @@
 	</body>
 </html>
 
-o

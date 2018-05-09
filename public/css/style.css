@@ -22,7 +22,7 @@
     width:0;
     height:0;
     outline: none;
-    cursor: inherit;
+    /*cursor: inherit;*/
 }
 
 body {

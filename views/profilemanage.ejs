@@ -49,7 +49,7 @@
 			
 			<div class="row">
 				<div class="col-sm-4 col-xs-12">
-					<div id="gtco-logo"><a href="/library/<%= username %>">Library Management<em>.</em></a></div>
+					<div id="gtco-logo"><a href="/profile2/<%= username %>">Library Management<em>.</em></a></div>
 				</div>
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
@@ -57,12 +57,16 @@
 							<a >Manage</a>
 							<ul class="dropdown">
 								<li><a href="/profilemanagement/<%= username %>">Profile Management</a></li>
-								<li><a href="#">Wallet Management</a></li>
-								<li><a href="#">Bookings</a></li>
+								<li><a href="/wallet/<%= username %>">Wallet Management</a></li>
+								<li><a href="/switching/<%= username %>">Money Transfer</a></li>
+								<li><a href="/bookings/<%= username %>">Bookings</a></li>
 							</ul>
 						</li>
-						
+												<li class="btn-cta"><a href="/profile2/<%= username %>"><span>Book</span></a></li>
+
 						<li> Hello <%= username %></li>
+												<a href="/home"><button type="button" class="btn btn-light">Logout</button></a>
+
 					</ul>	
 				</div>
 			</div>
